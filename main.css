@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png) repeat;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+header {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: table;
+}
+
+.table {
+  display: table-cell;
+  width: 100vw;
+  height: auto;
+  vertical-align: middle;
+}
+
+.box {
+  margin: 0 auto;
+  background-color: hsla(100,0%,0%,.6);
+  padding: .625rem; 
+}
+
+.headline {
+  display: inline-block;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #d2ba87;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.headline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+.tagline, .date {
+  font-family: 'Libre Baskerville', serif;
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  padding-bottom: 10px;
+}
+
+.location, .gifts, .contact {
+  text-align: center;
+  padding: 2rem;
+  color: #444349;
+}
+
+.location h1, .program #prog, .gifts h2, .qanda h2, .contact h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.location h2, .qanda h3  {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+img {
+  width: 40vw;
+  padding: 2rem;
+}
+
+.location p {
+  font-family: 'Muli', sans-serif;
+  padding-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.program, .qanda {
+  background: hsla(100,0%,0%,.6);
+  padding: 2rem;
+  color: #d2ba87;
+}
+
+.program h2 {
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+  font-style: italic;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.program ul {
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.gifts p, .contact p {
+  font-family: 'Libre Baskerville', serif;
+  padding: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.style1 { 
+    display: block;
+    border-width: 1px;
+    width: 12rem;
+}
+
+.style2 { 
+    display: block;
+    border-width: 2px;
+    width: 6rem;
+}
+
+.style3 { 
+    display: block;
+    border-width: 2px;
+    width: 12rem;
+    border-color: #d2ba87;
+}
+
+.qanda p {
+  line-height: 1.5;
+  font-family: 'Muli', sans-serif;
+  text-align: justify;
+}
+
+.qanda h3 {
+  text-align: center;
+}
+
+.qanda .q {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.qanda .a {
+  padding-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color:#bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .2s ease-in-out;
+}
+
+footer {
+  background-color: #606060;
+  width: 100vw;
+  height: 4rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+footer div {
+  display: block;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .box {
+    border-radius: 5px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .headline {
+    font-size: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .ceremony, .photos, .party {
+    display: inline-block;
+    width: 25.33%;
+    margin: 3%;
+    padding: 1%;
+  }
+  ::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+  img {
+    width: 18vw;
+  }
+  hr {
+    clear: both;
+    visibility: hidden;
+     }
+  .program h2 {
+    text-align: center;
+  }
+  .program ul {
+    text-align: center;
+  }
+  .qanda h3 {
+  text-align: left;
+}
+  #taa, #faf, #oss {
+    float: left;
+    width: 29.33%;
+    margin: 1%;
+    padding: 1%;
+  }
+  .contact::after {
+  content: "";
+  clear: left;
+  display: inline-block;
+  }
+}
